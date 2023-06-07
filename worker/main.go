@@ -19,10 +19,17 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Reding config and setting up awsConfig
+	// Reading config and setting up awsConfig
 	// is already done for you. You can use
 	// the awsConfig variable to acess AWS services
 	// like SQS, SNS, etc.
 	// The following is a dummy line:
 	_ = awsConfig
+
+	// Write you code here..
+	// client := sqs.NewFromConfig(awsConfig)
+	// client.ReceiveMessage()
+
+	// snsClient := sns.NewFromConfig(awsConfig)
+	// snsClient.Publish()
 }
